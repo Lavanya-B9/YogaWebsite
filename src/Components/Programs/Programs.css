@@ -1,0 +1,93 @@
+#programs-container {
+  background-color: rgb(240, 227, 227);
+  padding: 2rem 7rem;
+}
+
+#programs-container>h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: rgb(85, 84, 84);
+  padding: 1rem 0;
+}
+
+#programs-container>p {
+  text-align: center;
+  text-transform: capitalize;
+  color: gray;
+  font-size: 1.1rem;
+  padding-bottom: 3rem;
+}
+
+.all-programs {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.programs {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 6px 6px 8px gray;
+  text-align: center;
+  padding: 1.5rem;
+  transition: .3s linear;
+}
+
+.programs>img {
+  height: 240px;
+  width: 250px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.programs:hover {
+  transform: scale(0.9);
+}
+
+.programs>h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.programs>p {
+  color: rgb(99, 93, 93);
+  padding: 5px;
+}
+
+.programs>button {
+  padding: 8px;
+  margin-top: 8px;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.programs>button:hover {
+  border: 2px solid pink;
+  background: none;
+  color: rgb(51, 48, 48);
+}
+
+@media screen and (max-width: 768px) {
+  #programs-container {
+    padding: 20px 10px;
+  }
+
+  .programs-container>h1 {
+    padding: 10px 0;
+    font: size 1.7rem;
+  }
+
+  .programs:hover {
+    transform: none;
+  }
+
+  .programs {
+    margin: 0 auto;
+  }
+}

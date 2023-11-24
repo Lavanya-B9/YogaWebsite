@@ -1,0 +1,109 @@
+#about-container {
+    background-color: rgb(115, 112, 112);
+    padding: 3rem;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.top>h1 {
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: white;
+
+}
+
+.top>p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: rgb(202, 192, 192);
+}
+
+.bottom {
+    display: flex;
+    margin: 4rem 5rem;
+    gap: 10rem;
+}
+
+.about-image>img {
+    width: 250px;
+    height: 400px;
+    background-size: cover;
+}
+
+.about-image>img:nth-child(2) {
+    margin-left: 2rem;
+    transform: scale(1.1);
+}
+
+.about-content>h5 {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(192, 0, 64);
+    letter-spacing: 1px;
+    font-size: 2rem;
+
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.benefits>li {
+    list-style-type: circle;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.para {
+    text-align: center;
+    color: rgb(210, 203, 203);
+    text-transform: capitalize;
+    padding: 1rem 10rem;
+    font-size: 1.1rem;
+    line-height: 32px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .about-image {
+        display: flex;
+        width: 100vw;
+        position: relative;
+        left: -20px;
+        margin-top: 30px;
+    }
+
+    .about-image>img {
+        height: 300px;
+        width: 160px;
+        margin: 0;
+    }
+
+    .about-image>img:nth-child(2) {
+        transform: none;
+    }
+
+    .para {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+}

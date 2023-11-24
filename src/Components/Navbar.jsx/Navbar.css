@@ -1,0 +1,107 @@
+.navbar {
+    background-color: white;
+    box-shadow: 4px 4px 12px gray;
+    position: fixed;
+    z-index: 9;
+    width: 97vw;
+    margin: 10px 5px 0 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar>h4 {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-top: 8px;
+    color: rgb(217, 7, 77);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.navbar>h4>span {
+    cursor: pointer;
+    color: rgb(150, 49, 66);
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+
+ul>li>a:hover {
+    border: 2px solid rgb(238, 61, 91);
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: .3s linear;
+}
+
+li {
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+.bars {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .bars {
+        display: inline;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: fixed;
+        border-radius: 0;
+        width: 100vw;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .navbar>.ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5.4rem;
+        color: white;
+        width: 100vw;
+        height: 60vh;
+        padding-left: 10rem;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgb(243, 8, 86);
+        left: -10px;
+        top: -10px;
+        transition: .3s linear;
+
+    }
+
+    .navbar>.ul>li>a {
+        color: white;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        left: -500px;
+    }
+
+    .ul>li>a:hover {
+        border: none;
+        transition: 0s;
+    }
+
+}

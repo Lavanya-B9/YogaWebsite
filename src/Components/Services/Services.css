@@ -1,0 +1,116 @@
+#services-container {
+    background-color: rgb(128, 119, 119);
+    margin: 0;
+    height: 100vh;
+}
+
+.Services-container>h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 5rem;
+    gap: 2.5rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+}
+
+.service>span,
+.card>span {
+    border: 2px solid rgb(0, 28, 106);
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    transition: .3s linear;
+    cursor: pointer;
+
+}
+
+.service>span:hover,
+.card>span:hover {
+    transform: translateY(6px);
+}
+
+.service>h5 {
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.service>p {
+    color: rgb(207, 199, 199);
+    width: 180px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px;
+}
+
+.each-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 3rem 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.card>p {
+    color: white;
+    font-size: 20px;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .Services-container>h2 {
+        padding: 20px 10px;
+        color: white;
+
+    }
+
+    .services {
+        margin: 0;
+        gap: 0;
+        margin: 10px 0px;
+    }
+
+    .each-card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+
+    .card>p {
+        font-size: 17px;
+    }
+
+
+}
